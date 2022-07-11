@@ -1,6 +1,6 @@
 export default function Filtro () {
     return(
-        <>
+        <div className="principal">
             <form>
                 <label htmlFor="">Marca:</label>
                 <input type="text" />
@@ -14,6 +14,6 @@ export default function Filtro () {
                 <input type="text" />
                 <button>Salvar</button>
             </form>
-        </>
+        </div>
     )
 }

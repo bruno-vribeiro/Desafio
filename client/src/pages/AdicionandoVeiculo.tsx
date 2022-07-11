@@ -1,6 +1,10 @@
+import { Link } from "react-router-dom";
+import Home from "./Home";
+
 export default function AdicionarVeiculo () {
     return(
-        <form>
+        <div className="principal">
+            <form>
             <label htmlFor="">Nome:</label>
             <input type="text" />
             <label htmlFor="">Marca:</label>
@@ -11,7 +15,14 @@ export default function AdicionarVeiculo () {
             <input type="text" />
             <label htmlFor="">Placa:</label>
             <input type="text" />
-            <button>Salvar</button>
+            <button
+            onClick={()=>{
+                <Home salvo={true} />
+            }}
+            >
+                <Link to={'/'}>Salvar</Link>
+            </button>
         </form>
+        </div>
     )
 }

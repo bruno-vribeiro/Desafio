@@ -1,15 +1,13 @@
 import "./App.css";
-import AdicionarVeiculo from "./components/AdicionandoVeiculo";
-import Filtro from "./components/Filtro";
-import Home from "./components/Home";
+
+
+import AppRouter from "./router";
 
 function App() {
   return (
-    <>
-      <Home />
-      <AdicionarVeiculo />
-      <Filtro />
-    </>
+  
+      <AppRouter />
+    
   );
 }
 
